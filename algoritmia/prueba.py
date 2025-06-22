@@ -35,3 +35,4 @@ def contruir_personaje():
 personaje1 = contruir_personaje()
 print(personaje1)
 print(personaje1.explorar)
+##Hola, este es un mensaje desde GitHub 
