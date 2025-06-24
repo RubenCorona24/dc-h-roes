@@ -36,3 +36,12 @@ personaje1 = contruir_personaje()
 print(personaje1)
     
 #Modificamos algunos cambios de prueba
+#Updatded: seguimos con el juego
+
+vidas = 4
+mapa = lugar
+personaje = personaje1
+
+print(f"Dentro de un {mapa} abandonado, se encontraba el personaje {personaje.name} explorando el lugar oscuro\nsin embargo, se encontró con algo que lo dejó paralizado")
+print(f"el personaje tiene {vidas} vidas solamente")
+print(f"Podrá sobrevivir {personaje.name} dentro de este lugar oscuro??")
