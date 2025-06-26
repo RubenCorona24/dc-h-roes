@@ -19,9 +19,10 @@ def asignar_area(*lugares):
 lugar = asignar_area(lugares)
 print(f"Nuestro mapa cuenta con {len(lugares)} areas, los cuales son: {lugares}, el lugar SELECCIONADO es: {lugar}")
 class Personaje:
-    def __init__(self,name,age):
+    def __init__(self,name,age,vida):
         self.name = name
         self.age = age
+        self.vida = vida
     def __str__(self):
         return f"El personaje llamado {self.name} tiene {self.age} años"
     def explorar(self):
@@ -30,7 +31,8 @@ class Personaje:
 def contruir_personaje():
     name = input("Nommbre del personaje: ")
     age = int(input("años del personaje: "))
-    return Personaje(name,age)
+    vida = int(input("Salud del personaje: "))
+    return Personaje(name,age,vida)
 
 personaje1 = contruir_personaje()
 print(personaje1)
@@ -45,3 +47,24 @@ personaje = personaje1
 print(f"Dentro de un {mapa} abandonado, se encontraba el personaje {personaje.name} explorando el lugar oscuro\nsin embargo, se encontró con algo que lo dejó paralizado")
 print(f"el personaje tiene {vidas} vidas solamente")
 print(f"Podrá sobrevivir {personaje.name} dentro de este lugar oscuro??")
+
+class Zombie:
+    def __init__(self,vida,daño,velocidad):
+        self.vida = vida
+        self.daño = daño
+        self.velocidad = velocidad
+    
+    def __str__(self):
+        return f"Vida: {self.vida} Daño: {self.daño} Velocidad: {self.velocidad}"
+    def atacar(self):
+        print("El zombie está atacando")
+        personaje.vida - self.daño
+
+    def correr(self):
+        print(f"Zombie corre a velocidad de {self.velocidad} ")
+
+zombie1 = Zombie(120,30,50)
+personaje2 = Personaje('Andy',19,90)
+
+
+
