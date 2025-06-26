@@ -65,6 +65,11 @@ class Zombie:
 
 zombie1 = Zombie(120,30,50)
 personaje2 = Personaje('Andy',19,90)
+fruta = choice(['manzana','plátano','sandía','uvas'])
+objeto = choice(['libro antiguo','reliquia','reloj','brújula','roca antigua'])
+print(f"{personaje2.name} se encontraba buscando su fruta favorita, la cual era {fruta}\nPero de pronto se encontro con algo extraño, un/a {objeto} ")
+
+print(f"Entonces {personaje1.name} apenas había llegado a {lugar} para ver que sucedía, donde se encontró con {personaje2.name} ...continuará")
 
 
 
