@@ -70,6 +70,24 @@ objeto = choice(['libro antiguo','reliquia','reloj','brújula','roca antigua'])
 print(f"{personaje2.name} se encontraba buscando su fruta favorita, la cual era {fruta}\nPero de pronto se encontro con algo extraño, un/a {objeto} ")
 
 print(f"Entonces {personaje1.name} apenas había llegado a {lugar} para ver que sucedía, donde se encontró con {personaje2.name} ...continuará")
+#A partir de ahora trabajao en otra rama llamda rama-juegos
+
+class Animal:
+    def __init__(self,raza,color):
+        self.raza= raza
+        self.color = color
+        
+    def __str__(self):
+        return f"Este animal de raza {self.raza} es de color {self.color}"
+    def hacer_sonido(self):
+        pass
+    def comer(self):
+        print(f"El {self.raza} está comiendo")
+
+animal1 = Animal('perro','marron')
+
+
+
 
 
 
