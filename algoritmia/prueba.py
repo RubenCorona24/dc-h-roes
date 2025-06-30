@@ -36,58 +36,30 @@ def contruir_personaje():
 
 personaje1 = contruir_personaje()
 print(personaje1)
-    
-#Modificamos algunos cambios de prueba
-#Updatded: seguimos con el juego
+print(personaje1.explorar())
+##Hola, este es un mensaje desde GitHub 
 
-vidas = 4
-mapa = lugar
-personaje = personaje1
+class Animal(Personaje):
+    def __init__(self, name, age,raza):
+        super().__init__(name, age)
+        self.raza = raza
 
-print(f"Dentro de un {mapa} abandonado, se encontraba el personaje {personaje.name} explorando el lugar oscuro\nsin embargo, se encontró con algo que lo dejó paralizado")
-print(f"el personaje tiene {vidas} vidas solamente")
-print(f"Podrá sobrevivir {personaje.name} dentro de este lugar oscuro??")
-
-class Zombie:
-    def __init__(self,vida,daño,velocidad):
-        self.vida = vida
-        self.daño = daño
-        self.velocidad = velocidad
-    
-    def __str__(self):
-        return f"Vida: {self.vida} Daño: {self.daño} Velocidad: {self.velocidad}"
-    def atacar(self):
-        print("El zombie está atacando")
-        personaje.vida - self.daño
-
-    def correr(self):
-        print(f"Zombie corre a velocidad de {self.velocidad} ")
-
-zombie1 = Zombie(120,30,50)
-personaje2 = Personaje('Andy',19,90)
-fruta = choice(['manzana','plátano','sandía','uvas'])
-objeto = choice(['libro antiguo','reliquia','reloj','brújula','roca antigua'])
-print(f"{personaje2.name} se encontraba buscando su fruta favorita, la cual era {fruta}\nPero de pronto se encontro con algo extraño, un/a {objeto} ")
-
-print(f"Entonces {personaje1.name} apenas había llegado a {lugar} para ver que sucedía, donde se encontró con {personaje2.name} ...continuará")
-#A partir de ahora trabajao en otra rama llamda rama-juegos
-
-class Animal:
-    def __init__(self,raza,color):
-        self.raza= raza
-        self.color = color
-        
-    def __str__(self):
-        return f"Este animal de raza {self.raza} es de color {self.color}"
     def hacer_sonido(self):
-        pass
+        print("El animal hace sonido")
     def comer(self):
-        print(f"El {self.raza} está comiendo")
+        print("El animal está comiendo")
 
-animal1 = Animal('perro','marron')
+    def cazar(self):
+        print("El animal está cazando su comida")
+    def __str__(self):
+        return f"El animal se llama {self.name} y tiene {self.age} años, es un {self.raza}"
+
+animal1 = Animal('Sandy',19,'perro')
+print(animal1)
+animal2 = Animal('Violeta',3,'mono')
+print(animal2)
 
 
-
-
+print(f"De repente, el {animal2.raza} se encuentra con un {animal1.raza}, y entonces empiezan a jugar, el {animal1.raza} le pregunta como se llama. el {animal2.raza} le dice {animal2.name}, y tu?\n{animal1.name} dijo el {animal1.raza}")
 
 
