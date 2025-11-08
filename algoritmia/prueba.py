@@ -60,6 +60,6 @@ animal2 = Animal('Violeta',3,'mono')
 print(animal2)
 
 
-print(f"De repente, el {animal2.raza} se encuentra con un {animal1.raza}, y entonces empiezan a jugar, el {animal1.raza} le pregunta como se llama. el {animal2.raza} le dice {animal2.name}, y tu?\n{animal1.name} dijo el {animal1.raza}")
+print(f"De repente, el {animal2.raza} se encuentra con un {animal1.raza}, y entonc  s empiezan a jugar, el {animal1.raza} le pregunta como se llama. el {animal2.raza} le dice {animal2.name}, y tu?\n{animal1.name} dijo el {animal1.raza}")
 
 
